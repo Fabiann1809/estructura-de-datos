@@ -69,3 +69,4 @@ if __name__ == "__main__":
 
     print("Índice de 'Estructura de datos':", workshop.search_in_list())
     print("Búsqueda en la segunda fila (ejemplo 'E'):", workshop.search_in_second_row("E"))
+    
