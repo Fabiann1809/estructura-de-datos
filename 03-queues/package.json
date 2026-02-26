@@ -1,0 +1,26 @@
+{
+  "name": "web-server-request-queue",
+  "version": "1.0.0",
+  "description": "Simulation of a web server request management system using a queue data structure in TypeScript.",
+  "main": "dist/app/main.js",
+  "scripts": {
+    "start": "ts-node src/app/main.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "typescript",
+    "data-structures",
+    "queue",
+    "web-server",
+    "simulation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1"
+  }
+}

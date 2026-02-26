@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cola de solicitudes - Servidor Web</title>
+    <link rel="stylesheet" href="/src/app/ui.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Simulación de cola de solicitudes</h1>
+        <p class="subtitle">Servidor web con estructura de datos Cola (FIFO)</p>
+      </header>
+
+      <section class="controls">
+        <button type="button" id="btnStart" class="btn btn-primary">
+          Iniciar simulación
+        </button>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <span class="stat-value" id="pendingCount">0</span>
+          <span class="stat-label">En cola (pendientes)</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value" id="processedCount">0</span>
+          <span class="stat-label">Procesadas</span>
+        </div>
+      </section>
+
+      <section class="panels">
+        <div class="panel">
+          <h2>Solicitudes en cola</h2>
+          <ul id="pendingList" class="request-list"></ul>
+          <p id="pendingEmpty" class="empty-msg hidden">No hay solicitudes en cola.</p>
+        </div>
+        <div class="panel">
+          <h2>Registro del servidor</h2>
+          <div id="logOutput" class="log-output"></div>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="/src/app/browser-ui.ts"></script>
+  </body>
+</html>
